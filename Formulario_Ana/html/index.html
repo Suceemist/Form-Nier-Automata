@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <script src="../js/funciones.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+    <link rel="shortcut icon" href="../img/icon.jpg">
+    <title>Sorteo de Nier:Automata</title>
+  </head>
+  <body>
+    <div class="contenido">
+      <h2>SORTEAMOS 100 COPIAS DE <img src="../img/nier_logo.png" id="img_titulo"> PARA PC Y 100 PARA XBOX. <br>
+      PARA PARTICIPAR RELLENA EL SIGUIENTE FORMULARIO:</h2>
+      <div class="formulario">
+        <label for="nombre">Nombre del participante:</label>
+        <input type="text" id="nombre" name="nombre"  placeholder="Introduzca su nombre" onblur="verificarNombre();"> <br>
+
+        <label for="email">Email del participante:</label>
+        <input type="email" id="email" name="email"  placeholder="Introduzca su email" onblur="verificarEmail();"> <br>
+
+        <label for="edad">Nombre del participante:</label>
+        <input type="number" id="edad" name="edad" placeholder="Introduzca su edad" onblur="verificarEdad();"> <br>
+
+        <label for="dni">DNI (con 9 carácteres):</label>
+        <input type="text" id="dni" name="dni"  placeholder="Introduzca su DNI" onblur="verificarDNI();"> <br>
+        <h4> Quiero la copia para: <br> (Puedes elegir las dos, pero si ganas no ganaras ambas copias, ganarás una que será elegida al azar.) </h4>
+        <label for="xbox"> XBOX: </label>
+        <input type="checkbox" id="xbox" name="xbox" value="xbox"> <br>
+        <label for="pc"> PC:  </label>
+        <input type="checkbox" id="pc" name="pc" value="pc"> <br>
+
+        <h4> Mi género es: </h4>
+        <label for="hombre">Hombre: </label>
+        <input type="radio" id="hombre" name="genero" value="hombre"> <br>
+        <label for="mujer">Mujer: </label>
+        <input type="radio" id="mujer" name="genero" value="mujer"> <br>
+
+        <h4> Dinos tu personaje favorito de Nier:Autómata y cómo conociste el juego: </h4>
+        <select name="combo">
+          <option value="2b">2B</option>
+          <option value="9s" selected>9S</option>
+          <option value="a2">A2</option>
+          <option value="otro">OTRO</option>
+        </select> <br>
+
+        <textarea id="texto" rows="4" cols="50"></textarea> <br> <br>
+
+
+        <button type="submit" id="btn_enviar" value="Participar">Participar en el sorteo</button>
+      </div>
+    </div>
+  </body>
+</html>

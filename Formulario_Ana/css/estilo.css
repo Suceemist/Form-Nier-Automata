@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "code";
+  src: url("../fonts/Source_Code_Pro/SourceCodePro-Regular.ttf");
+}
+
+body{
+  box-sizing: border-box;
+  font-family: "code";
+  padding: 0px;
+  margin: 0px;
+  background-image: url("../img/intro.jpg");
+}
+
+.Correcto{
+  background-color:  #e6ffe6;
+}
+
+.Incorrecto{
+  background-color: #ff9999;
+}
+
+.contenido{
+  background-color: rgba(221,221,221,0.3);
+  padding: 10px;
+}
+
+.formulario{
+  margin: 200px;
+  margin-right: 400px;
+  margin-top: 50px;
+  background-color: rgba(0,204,255,0.8);
+  border-width: 10px;
+  border-radius: 25px;
+  border-color: gray;
+  border-style: outset;
+
+}
+
+h2{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+#img_titulo{
+  vertical-align: middle;
+  display: inline;
+}
+
+label, h4{
+  margin-left: 19px;
+}
+
+input, button, select, textarea{
+  font-family: "code";
+  margin: 10px;
+  margin-left: 40px;
+  padding: 10px;
+  border-radius: 5px;
+}
+input:focus, textarea:focus {
+  border-style: outset;
+  border-width: 3px;
+  border-color: #b3b3ff;
+  background-color: #e6e6e6;
+}
+button{
+  margin-left: 100px;
+}
